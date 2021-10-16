@@ -1,0 +1,25 @@
+.circle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100rem;
+
+  border: 2rem solid red;
+
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: green;
+
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(70deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

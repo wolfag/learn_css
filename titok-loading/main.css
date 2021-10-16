@@ -1,0 +1,65 @@
+html {
+  font-size: 62.5%;
+}
+
+.loader div {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.loader div:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  border-radius: 100rem;
+  background: red;
+  animation: spinner 1s linear infinite;
+  animation-delay: -0.5s;
+}
+
+.loader div:nth-child(2) {
+  width: 80px;
+  height: 80px;
+  border-radius: 100rem;
+  background: green;
+  animation: spinner 1s linear infinite;
+}
+
+.loader div:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  border-radius: 100rem;
+  background: red;
+  animation: spinner2 1s linear infinite;
+  animation-delay: -0.5s;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes spinner2 {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  49.99% {
+    transform: translateX(80px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+}

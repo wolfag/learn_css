@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="../assets/reset.css" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="singup">
+      <div class="singup__heading">Create account</div>
+      <p class="singup__title">
+        <span>Already have an account?</span>
+        <a class="singup__link singup__link--underline" href="#">Sign in</a>
+      </p>
+      <form action="#" class="signup__form">
+        <div class="form__group">
+          <input class="form__input" type="text" placeholder="Midname" />
+        </div>
+        <div class="form__group form__group--2">
+          <input class="form__input" type="text" placeholder="First name" />
+          <input class="form__input" type="text" placeholder="Last name" />
+        </div>
+        <div class="form__group">
+          <input class="form__input" type="email" placeholder="E-mail" />
+        </div>
+        <div class="form__group">
+          <button type="submit" class="form__submit">
+            <span class="form__submit-text">Sign up</span>
+            <ion-icon
+              name="arrow-forward-outline"
+              class="form__submit-icon"
+            ></ion-icon>
+          </button>
+        </div>
+
+        <div class="form__tos">
+          <input type="checkbox" id="tos" />
+          <label for="tos"
+            >I have read and agree to the
+            <a class="singup__link" href="#">Terms of Service</a>
+          </label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="../assets/reset.css" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="signup">
+        <form action="#">
+          <h1 class="signup__title">Sign up</h1>
+          <a class="signup__google">
+            <ion-icon class="google__icon" name="logo-google"></ion-icon>
+            <span class="google__text">Sign up with Google</span>
+          </a>
+          <div class="signup__or">
+            <span>Or</span>
+          </div>
+          <div class="form__group">
+            <label class="signup__label" for="fullname">Full name</label>
+            <input
+              id="fullname"
+              type="text"
+              class="form__input"
+              placeholder="Eg: John Doe"
+            />
+          </div>
+          <div class="form__group">
+            <label class="signup__label" for="email">Full name</label>
+            <input
+              type="email"
+              id="email"
+              class="form__input"
+              placeholder="Eg: johnndow@gmail.com"
+            />
+          </div>
+          <button class="signup__submit">Sign up</button>
+          <div class="footer">
+            <span>Already have an account? </span>
+            <a href="" class="signup__link">Log in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

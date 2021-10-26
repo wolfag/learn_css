@@ -1,0 +1,39 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 110px 0 160px;
+
+  & > * {
+    width: 50%;
+  }
+  &-content {
+    padding-right: 130px;
+  }
+
+  &-desc {
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 1279px) {
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-content {
+      padding-right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 25px 0 80px;
+    display: block;
+    & > * {
+      width: 100%;
+      padding: 0;
+    }
+    &-content {
+      margin-bottom: 35px;
+    }
+  }
+}

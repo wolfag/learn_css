@@ -1,0 +1,106 @@
+.work {
+  padding-top: 145px;
+  // &-list {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: stretch;
+  // }
+  // &-item {
+  //   width: calc((100% / 3) - ((2 * 70px) / 3));
+  // }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 70px;
+  }
+
+  &-item {
+    border: 1px solid $gray-light;
+    padding: 40px 30px;
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    line-height: 1.4;
+    transition: all 0.2s linear;
+  }
+
+  &-more {
+    transition: all 0.2s linear;
+  }
+
+  &-image {
+    margin-bottom: 35px;
+    min-height: 115px;
+  }
+  &-title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &-desc {
+    margin-bottom: 35px;
+    word-break: break-word;
+
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 1279px) {
+  }
+  @media screen and (max-width: 1023px) {
+    padding-top: 80px;
+    &-list {
+      grid-column-gap: 30px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-list {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 90%;
+      grid-auto-flow: column;
+      grid-gap: 1.5rem;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      grid-template-columns: unset;
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+      }
+      & > * {
+        scroll-snap-align: start;
+      }
+    }
+    &-item {
+      padding: 25px 30px;
+    }
+  }
+
+  @media (hover: hover) {
+    &-item:hover {
+      background-color: transparent;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      .work-more {
+        border-color: $primary-color;
+        background-color: $primary-color;
+        color: white;
+      }
+    }
+  }
+}

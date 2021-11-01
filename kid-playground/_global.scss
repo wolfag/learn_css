@@ -13,6 +13,11 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -22,7 +27,6 @@ img {
 
 .wrapper {
   max-width: 1440px;
-  height: 100vh;
   margin: 0 auto;
   .container {
     margin: 0 auto;
@@ -39,5 +43,20 @@ img {
 
   &__text {
     color: $primary-color;
+  }
+}
+
+.clamp {
+  &-1 {
+    @include ellipsis(1);
+  }
+  &-2 {
+    @include ellipsis(2);
+  }
+  &-3 {
+    @include ellipsis(3);
+  }
+  &-4 {
+    @include ellipsis(4);
   }
 }

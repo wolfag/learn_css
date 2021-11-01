@@ -1,0 +1,33 @@
+.footer {
+  &__container {
+    @include flex(flex-start, space-between);
+  }
+
+  &__item {
+    width: 25%;
+  }
+
+  &__link {
+    color: $text-color;
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 3rem;
+    width: fit-content;
+  }
+
+  @media screen and (max-width: 767px) {
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    &__link {
+      width: unset;
+      text-align: center;
+    }
+  }
+}

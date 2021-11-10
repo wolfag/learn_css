@@ -1,0 +1,12 @@
+body {
+  font-family: 'Popins', sans-serif;
+}
+
+.darkmode-input:checked + div .darkmode-spinner {
+  transform: translateX(60px);
+  background-color: #fff;
+}
+
+.darkmode-input:checked + div {
+  background: darkblue;
+}

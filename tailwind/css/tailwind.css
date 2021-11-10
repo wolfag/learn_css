@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[50px];
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    .scroll-snap-mandatory {
+      scroll-snap-type: x mandatory;
+    }
+    .scroll-snap-always {
+      scroll-snap-stop: always;
+    }
+    .scroll-snap-start {
+      scroll-snap-align: start;
+    }
+  }
+}

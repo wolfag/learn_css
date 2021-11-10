@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./build/tailwind.css" />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <label for="toggle" class="inline-block cursor-pointer toggle-switch">
+      <input id="toggle" type="checkbox" class="hidden darkmode-input" />
+      <div
+        class="
+          w-[100px]
+          h-[40px]
+          border border-[#ccc]
+          rounded-full
+          fixed
+          right-5
+          bottom-5
+          z-50
+          p-[5px]
+        "
+      >
+        <div
+          class="w-7 h-7 bg-[#ccc] rounded-full transition-all darkmode-spinner"
+        ></div>
+      </div>
+    </label>
+    <!-- <div class="pt-12">
+      <h1
+        class="
+          text-center text-[#ffa400] text-lg
+          sm:text-2xl
+          md:text-3xl
+          lg:text-4xl
+          font-bold
+          mb-5
+        "
+      >
+        Live anywhere
+      </h1>
+      <h2 class="text-center font-light text-xl text-gray-500 mb-35">
+        Keep calm and travel on
+      </h2>
+      <div
+        class="
+          grid grid-cols-1
+          lg:grid-cols-3
+          gap-x-[37px]
+          max-w-6xl
+          mx-auto
+          px-[15px]
+          gap-y-7
+          lg:gap-y-0
+        "
+      >
+        <div>
+          <div class="h-96 mb-5">
+            <img
+              src="https://images.unsplash.com/photo-1604866830513-d54766457f45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw0MDQzMzl8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+              alt=""
+              class="w-full h-full rounded-lg object-cover"
+            />
+          </div>
+          <h3 class="text-center font-medium text-lg mb-3">
+            Enjoy the great cold
+          </h3>
+          <span class="block text-center text-gray-400 text-sm">
+            6.789 properties
+          </span>
+        </div>
+        <div>
+          <div class="h-96 mb-5">
+            <img
+              src="https://images.unsplash.com/photo-1604866830513-d54766457f45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw0MDQzMzl8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+              alt=""
+              class="w-full h-full rounded-lg object-cover"
+            />
+          </div>
+          <h3 class="text-center font-medium text-lg mb-3">
+            Enjoy the great cold
+          </h3>
+          <span class="block text-center text-gray-400 text-sm">
+            6.789 properties
+          </span>
+        </div>
+        <div>
+          <div class="h-96 mb-5">
+            <img
+              src="https://images.unsplash.com/photo-1604866830513-d54766457f45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw0MDQzMzl8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+              alt=""
+              class="w-full h-full rounded-lg object-cover"
+            />
+          </div>
+          <h3 class="text-center font-medium text-lg mb-3">
+            Enjoy the great cold
+          </h3>
+          <span class="block text-center text-gray-400 text-sm">
+            6.789 properties
+          </span>
+        </div>
+      </div>
+    </div> -->
+    <button
+      class="
+        inline-block
+        py-3
+        px-10
+        m-5
+        rounded-lg
+        text-white
+        bg-[#6a5af9]
+        motion-safe:hover:scale-110
+        transition-all
+        disabled:opacity-50
+      "
+      disabled
+    >
+      Confirm
+    </button>
+    <input
+      type="text"
+      class="
+        py-3
+        px-3
+        border border-[#ccc]
+        outline-none
+        rounded-xl
+        m-3
+        lg:focus:border-[#ffa400]
+        transition-all
+      "
+    />
+
+    <ul>
+      <li class="odd:bg-red-400">mojt</li>
+      <li class="even:bg-green-400">mojt</li>
+    </ul>
+
+    <div
+      class="
+        w-10
+        h-10
+        flex
+        items-center
+        justify-center
+        mx-auto
+        my-5
+        rounded-lg
+        text-[red]
+        relative
+        before:absolute
+        before:inset-0
+        before:bg-current
+        before:rounded-lg
+        before:opacity-25
+        after:absolute
+        after:w-3
+        after:h-3
+        after:bg-blue-400
+        after:top-4
+        after:left-7
+        after:rounded-lg
+      "
+    >
+      aaa
+    </div>
+
+    <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5 p-5">
+      <div
+        class="
+          px-5
+          py-8
+          rounded-lg
+          border border-[#eee]
+          text-center
+          dark:bg-[#0f0d58] dark:text-white
+        "
+      >
+        <h3 class="mb-5">image</h3>
+        <h3 class="text-lg font-semibold mb-6">title</h3>
+        <div class="text-sm leading-normal text-[#ccc]">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
+          expedita, quam ipsam illo tempora voluptate veniam sunt quaerat
+          dolorem recusandae doloribus aspernatur soluta aliquam officiis
+          ratione ipsum voluptates, quo magnam.
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-[1140px] mx-auto flex items-center">
+      <div class="w-full max-w-[555px]">
+        <h1 class="text-[#0b132a] text-[50px] font-medium mb-5">
+          want anything to be easy with <strong>laslesvpn</strong>
+        </h1>
+        <p class="text-[#4f5665] mb-[50px]">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+          tempora, dolorum, inventore cumque et quam deserunt enim eligendi,
+          iusto error veniam. Aperiam sunt culpa neque beatae? Adipisci pariatur
+          qui molestias!
+        </p>
+        <a
+          href="#"
+          class="
+            inline-block
+            text-white
+            font-bold
+            p-4
+            w-full
+            max-w-[250px]
+            bg-[#f53838]
+            rounded-[10px]
+            text-center
+          "
+        >
+          get started
+        </a>
+      </div>
+      <div class="pl-10">
+        <h1>image</h1>
+      </div>
+    </div>
+
+    <section
+      class="
+        grid
+        auto-cols-[90%]
+        grid-flow-col
+        overflow-x-auto
+        scroll-snap-mandatory scroll-snap-always
+        gap-x-5
+      "
+    >
+      <div class="h-[200px] scroll-snap-start">
+        <img
+          class="w-full h-full object-cover"
+          src="https://source.unsplash.com/random"
+          alt=""
+        />
+      </div>
+      <div class="h-[200px] scroll-snap-start">
+        <img
+          class="w-full h-full object-cover"
+          src="https://source.unsplash.com/random"
+          alt=""
+        />
+      </div>
+      <div class="h-[200px] scroll-snap-start">
+        <img
+          class="w-full h-full object-cover"
+          src="https://source.unsplash.com/random"
+          alt=""
+        />
+      </div>
+      <div class="h-[200px] scroll-snap-start">
+        <img
+          class="w-full h-full object-cover"
+          src="https://source.unsplash.com/random"
+          alt=""
+        />
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const toggleSwitch = document.querySelector(
+      '.toggle-switch input[type="checkbox"]',
+    );
+
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+      document.documentElement.setAttribute('class', currentTheme);
+      if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+      }
+    }
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('class', 'dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('class', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    toggleSwitch.addEventListener('change', switchTheme);
+  </script>
+</html>

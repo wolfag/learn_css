@@ -1,0 +1,6 @@
+body {
+  background: repeating-linear-gradient(pink 0, blue 15px, #000 15px, #000 25px)
+      no-repeat 0 150px,
+    radial-gradient(circle, #f6df96 40%, #000 1%),
+    linear-gradient(red 50%, green 1%);
+}

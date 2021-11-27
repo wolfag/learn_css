@@ -1,0 +1,27 @@
+/* ... */
+
+.classB {
+  background-color: cyan;
+}
+
+/* ... */
+
+.container {
+  display: flex;
+}
+
+.classA {
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .classA {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    display: block;
+  }
+}

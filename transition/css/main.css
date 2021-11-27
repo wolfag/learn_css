@@ -1,0 +1,63 @@
+body {
+  background-color: purple;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+}
+.btn span:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 0%;
+  background-color: red;
+  transition: all 0.2s linear;
+}
+.btn span:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: all 0.2s linear;
+}
+.btn span:nth-child(3) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 0%;
+  background-color: red;
+  transition: all 0.2s linear;
+}
+.btn span:nth-child(4) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: all 0.2s linear;
+}
+.btn:hover span:nth-child(1) {
+  height: 100%;
+}
+.btn:hover span:nth-child(2) {
+  width: 100%;
+}
+.btn:hover span:nth-child(3) {
+  height: 100%;
+}
+.btn:hover span:nth-child(4) {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

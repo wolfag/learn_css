@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>A simple question</title>
+  </head>
+  <body>
+    <p>
+      You have a html structure like this:
+    </p>
+
+    <div class="container">
+      <div class="classA">
+        <div class="classB">1</div>
+        <div class="classB">2</div>
+        <div class="classB">3</div>
+      </div>
+      <div class="classA">
+        <div class="classB">4</div>
+        <div class="classB">5</div>
+        <div class="classB">6</div>
+      </div>
+      <div class="classA">
+        <div class="classB">7</div>
+        <div class="classB">8</div>
+        <div class="classB">9</div>
+      </div>
+    </div>
+
+    <p>
+      Please update file "style.css" so that 3 cases below are satisfied:
+    </p>
+
+    <ol>
+      <li>
+        With screen >= 992px, display all divs with classB on 1 line (so in
+        total, we have 1 lines with 9 cells)
+      </li>
+      <li>
+        With screen >= 576px and <= 992px, display all divs that has classA on 1
+        line (so in total we have 3 lines, in each line we have 3 cells)
+      </li>
+      <li>
+        With screen < 576px, display each div with classB in its own line (so in
+        total we have 9 lines)
+      </li>
+    </ol>
+
+    <p>
+      In all 3 cases, div with classB always fills as much space as it can (for
+      example, in case 1, 9 cells will fill the screen's width, each cell is
+      about 1/9 of the screen)
+    </p>
+  </body>
+</html>

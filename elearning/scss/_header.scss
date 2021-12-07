@@ -1,0 +1,105 @@
+.header {
+    background-color: $yellow;
+    clip-path: ellipse(100% 100% at top);
+    overflow: hidden;
+    &-container {
+        max-width: 1725px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    }
+    &-buttons {
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        gap: 0 34px;
+    }
+    &-top {
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 83px;
+    }
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 37px;
+    }
+    &-heading {
+        font-size: 54px;
+        font-weight: bold;
+        margin-bottom: 34px;
+        line-height: calc(81 / 54);
+        color: $secondary-color;
+        span {
+            color: $primary-color;
+        }
+    }
+    &-desc {
+        font-size: 24px;
+        line-height: 160%;
+        margin-bottom: 52px;
+        color: $gray-dark;
+    }
+    &-actions {
+        display: flex;
+        align-items: center;
+        gap: 0 40px;
+        .btn--primary {
+            padding: 22px 38px;
+        }
+    }
+}
+
+.menu {
+    margin-left: auto;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0 80px;
+    &-link {
+        color: inherit
+    }
+}
+
+.btn {
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: $font-primary;
+    line-height: calc(33 / 22);
+    padding: 13px 50px;
+    border: 0;
+    outline: none;
+    border-radius: 100rem;
+    cursor: pointer;
+    &--white {
+        background-color: white;
+        color: $gray-light;
+    }
+    &--primary {
+        color: white;
+        background-color: $secondary-color
+    }
+    ;
+}
+
+.watch {
+    display: flex;
+    align-items: center;
+    gap: 0 32px;
+    font-size: 24px;
+    line-height: calc(36 / 24);
+    color: inherit;
+    &-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 100rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
